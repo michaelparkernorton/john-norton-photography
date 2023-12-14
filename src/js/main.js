@@ -11,18 +11,22 @@ document.body.onkeydown = function (e) {
 			document.body.requestFullscreen();
 		}
   }
-	if (e.key == 'ArrowDown' || e.code == 'ArrowDown') {
-		count += 1;
-		colors[count].scrollIntoView();
+	if (e.key === 'ArrowDown' || e.code === 'ArrowDown') {
+	  // 
+	      count =	(count + 1) % colors.length;
+		console.log(countcx )
+		colors[count].scrollIntoView({ behavior: "smooth" });
 		// height += window.innerHeight
     // window.scroll({
 		// 	top: height,
 		// 	behavior: "smooth",
 		// });
   }
-	if (e.key == 'ArrowUp' || e.code == 'ArrowUp') {
-		count -= 1;
-		colors[count].scrollIntoView();
+	if (e.key === 'ArrowUp' || e.code === 'ArrowUp') {
+		// count -= 1;
+		// count = Math.max(count - 1, 0);
+		count =	(count - 1 + colors.length) % colors.length;
+		colors[count].scrollIntoView({ behavior: "smooth" });
 
 		// console.log(window.innerHeight);
 		// height -= window.innerHeight;
