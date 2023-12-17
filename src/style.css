@@ -1,29 +1,78 @@
-html {
+/*-----------------------------------*\
+  #RESET
+\*-----------------------------------*/
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+li {
+  list-style: none;
+}
+
+a,
+img,
+span,
+input,
+button {
+  display: block;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+img {
+  height: auto;
+}
+input,
+button {
+  background: none;
+  font: inherit;
+}
+input {
+  width: 100%;
+}
+button {
+  color: inherit;
+  cursor: pointer;
+}
+s html {
   scroll-behavior: smooth;
 }
 
 body {
-	margin: 0;
-	overflow: hidden;
+  margin: 0;
+  overflow: hidden;
 }
+/* Navigation CSS */
+.header {border: 2px solid blue;}
 
 .color {
-	height: 100vh;
-	width: 100vw;
-	
+  height: 100vh;
+  width: 100vw;
 }
 .red {
-	background-color: red;
+  background-color: red;
 }
 .orange {
-	background-color: orange;
+  background-color: orange;
 }
 .yellow {
-	background-color: yellow;
+  background-color: yellow;
 }
-.green {background-color: green }
+.green {
+  background-color: green;
+}
 
-.blue {background-color: blue}
+.blue {
+  background-color: blue;
+}
 
-.indigo {background-color: indigo;}
-.violet {background-color: violet;}
+.indigo {
+  background-color: indigo;
+}
+.violet {
+  background-color: violet;
+}
