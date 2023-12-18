@@ -2,13 +2,15 @@ let height = 0;
 const colors = document.querySelectorAll(".color");
 console.log(colors[1]);
 let count = 0;
-
+let main = document.querySelector("main")
+console.log(main)
 document.body.onkeydown = function (e) {
   if (e.key == " " || e.code == "Space" || e.keyCode == 32) {
-    if (document.fullscreenElement) {
+    console.log("here")
+    if (main.fullscreenElement) {
       document.exitFullscreen();
     } else {
-      document.body.requestFullscreen();
+     main.requestFullscreen();
     }
   }
   if (e.key === "ArrowDown" || e.code === "ArrowDown") {
