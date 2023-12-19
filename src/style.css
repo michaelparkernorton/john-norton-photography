@@ -38,23 +38,26 @@ button {
   color: inherit;
   cursor: pointer;
 }
-s html {
+ html {
   scroll-behavior: smooth;
 }
 
 body {
   margin: 0;
   overflow: hidden;
-  background: rgb(233, 229, 229);
+  background: #f5f6f7;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 /* Navigation CSS */
-.header {border: 2px solid blue;
+.header {
   display: flex;
   justify-content: space-between;
   height: 50px;
   padding: 10px;
+  color: #000;
  }
  .logo {display: inline-block;
+  text-transform: uppercase;
 
 }
 
@@ -63,6 +66,24 @@ body {
 
 }
 .nav-bar ul li {padding-right: 15px;}
+
+/* Carousel section */
+.carousel-div {
+  width: 100%;
+  height: 300px;
+  background-color: beige;
+  border-bottom: 4px solid #fdb347;;
+}
+/* Second section */
+.home-divs {display: flex;
+  flex-wrap: wrap;
+
+}
+.home-divs img {
+  width: 100%;
+  max-width: 350px;
+  height: 300px;
+}
 .color {
   height: 100vh;
   width: 100vw;

@@ -15,11 +15,12 @@ function addElements() {
     const currentDiv = document.getElementById("div" + index);
     document.body.insertBefore(newDiv, currentDiv);
   }
-  // newDiv.style.backgroundColor = "#" + color;
+  newDiv.style.backgroundColor = "#" + color;
 
-  // and give it some content
+//   and give it some content
 
-  // add the text node to the newly created div
+//   add the text node to the newly created div
 
-  // add the newly created element and its content into the DOM
+//   add the newly created element and its content into the DOM
+// 
 }
